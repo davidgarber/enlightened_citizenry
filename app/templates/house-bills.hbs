@@ -1,0 +1,7 @@
+<h1>Upcoming Bills in the House</h1>
+
+<ul>
+  {{#each houseBill in model}}
+    <li><span class="bills"><h5>{{houseBill.bill_id}}</h5> {{houseBill.description}}</span></li>
+  {{/each}}
+</ul>
