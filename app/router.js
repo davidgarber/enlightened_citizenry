@@ -12,6 +12,9 @@ Router.map(function() {
   this.resource('bills');
   this.resource('house-bills');
   this.resource('senate-bills');
+  this.resource('recent-bills', function(){
+    this.resource('getrecentbills', {path: 'getrecentbills/:date'});
+  });
   // this.resource('committees');
   // this.resource('about');
 });

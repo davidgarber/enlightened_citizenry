@@ -1,8 +1,8 @@
 
-<h1>Upcoming Bills in the Senate</h1>
+<h3>Upcoming Bills in the Senate</h3>
 
 <ul>
   {{#each senateBill in model}}
-    <li><span class="bills"><h5>{{senateBill.bill_id}}</h5> {{senateBill.description}}</span></li>
+    <li><span class="bills"><h5>{{senateBill.version_name}}</h5> {{senateBill.chamber}}</span></li>
   {{/each}}
 </ul>
