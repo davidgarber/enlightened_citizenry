@@ -1,2 +1,12 @@
-<!-- List of committees in House and Senate
-Select committees and see subcommittees -->
+<h1>Committees</h1>
+
+<form>
+  <div class="form-group">
+    <label for="chamber">Chamber</label>
+    {{input value=chamber id="chamber"}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
+</form>
+
+{{outlet}}

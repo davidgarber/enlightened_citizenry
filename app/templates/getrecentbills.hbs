@@ -1,6 +1,5 @@
 <ul>
   {{#each recentBill in model}}
-    <li><span class="bills">{{recentBill.bill_id}}</span></li>
+    <li><span class="bills">{{recentBill.bill_id}} {{recentBill.description}} {{recentBill.chamber}}</span></li>
   {{/each}}
-
 </ul>

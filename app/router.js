@@ -15,7 +15,9 @@ Router.map(function() {
   this.resource('recent-bills', function(){
     this.resource('getrecentbills', {path: 'getrecentbills/:date'});
   });
-  // this.resource('committees');
+  this.resource('committees', function() {
+    this.resource('chamberpot', {path: 'chamberpot/:chamber'});
+  });
   // this.resource('about');
 });
 
