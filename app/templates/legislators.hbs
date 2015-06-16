@@ -1,6 +1,6 @@
+<div class="container">
 <h1>Legislator Lookup</h1>
-
-<form>
+  <form>
   <div class="form-group">
     <label for="zip">Zip Code</label>
     {{input value=zip id="zip"}}
@@ -8,3 +8,9 @@
 
   <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
 </form>
+</div>
+
+<div class="container">
+  {{outlet}}
+
+</div>
